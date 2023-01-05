@@ -13,11 +13,70 @@ const rl = readline.createInterface({
 
 // the function that will be called by the unit test below
 const rockPaperScissors = (hand1, hand2) => {
+  const cleanHand1 = hand1.trim().toLowerCase()
+  const cleanHand2 = hand2.trim().toLowerCase()
+  if (cleanHand1 == 'rock' && cleanHand2 == 'rock') {
+    return "It's a tie!"
+  }
+  if (cleanHand1 == 'paper' && cleanHand2 == 'paper') {
+    return "It's a tie!"
+  }
+  if (cleanHand1 == 'scissors' && cleanHand2 == 'scissors') {
+    return "It's a tie!"
+  }
+  if (cleanHand1 == 'rock' && cleanHand2 == 'paper') {
+    return "Hand two wins!"
+  }
+  if (cleanHand1 == 'paper' && cleanHand2 == 'scissors') {
+    return "Hand two wins!"
+  }
+  if (cleanHand1 == 'scissors' && cleanHand2 == 'rock') {
+    return "Hand two wins!"
+  }
+  if (cleanHand1 == 'paper' && cleanHand2 == 'rock') {
+    return "Hand one wins!"
+  }
+  if (cleanHand1 == 'scissors' && cleanHand2 == 'paper') {
+    return "Hand one wins!"
+  }
+  if (cleanHand1 == 'rock' && cleanHand2 == 'scissors') {
+    return "Hand one wins!"
+  }
+  
 
+
+
+
+
+
+
+
+  // const rockPaperScissors = (cleanHand1, hand2) => {
+  //   return (rock, rock) ? "It's a tie!"
+  //   : (paper, paper) ? "It's a tie!"
+  //   : (scissors, scissors) ? "It's a tie!"
+  //   : (rock, paper) ? "Hand two wins!"
+  //   : (paper, scissors) ? "Hand two wins!"
+  //   : (scissors, rock) ? "Hand two wins!"
+  //   : (paper, rock) ? "Hand one wins!"
+  //   : (scissors, paper) ? "Hand one wins!"
+  //   : (rock, scissors) ? "Hand one wins!"
+  // }
+
+
+  
+
+  // console.log(rockPaperScissors.trim());
+  // console.log(rockPaperScissors.localCompare());
+  // console.log(rockPaperScissors.toLowerCase())
   // Write code here
   // Use the unit test to see what is expected
 
 }
+
+
+
+
 
 // the first function called in the program to get an input from the user
 // to run the function use the command: node main.js
