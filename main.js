@@ -45,7 +45,7 @@ const rockPaperScissors = (hand1, hand2) => {
   
 
 
-
+}
 
 
 
@@ -63,16 +63,18 @@ const rockPaperScissors = (hand1, hand2) => {
   //   : (rock, scissors) ? "Hand one wins!"
   // }
 
-
+// close out last function without ? 
   
 
   // console.log(rockPaperScissors.trim());
   // console.log(rockPaperScissors.localCompare());
   // console.log(rockPaperScissors.toLowerCase())
+
+  
   // Write code here
   // Use the unit test to see what is expected
 
-}
+
 
 
 
