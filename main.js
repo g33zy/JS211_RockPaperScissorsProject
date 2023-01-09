@@ -15,15 +15,18 @@ const rl = readline.createInterface({
 const rockPaperScissors = (hand1, hand2) => {
   const cleanHand1 = hand1.trim().toLowerCase()
   const cleanHand2 = hand2.trim().toLowerCase()
-  if (cleanHand1 == 'rock' && cleanHand2 == 'rock') {
+  if (cleanHand1 === cleanHand2) {
     return "It's a tie!"
   }
-  if (cleanHand1 == 'paper' && cleanHand2 == 'paper') {
-    return "It's a tie!"
-  }
-  if (cleanHand1 == 'scissors' && cleanHand2 == 'scissors') {
-    return "It's a tie!"
-  }
+  // if (cleanHand1 == 'rock' && cleanHand2 == 'rock') {
+  //   return "It's a tie!"
+  // }
+  // if (cleanHand1 == 'paper' && cleanHand2 == 'paper') {
+  //   return "It's a tie!"
+  // }
+  // if (cleanHand1 == 'scissors' && cleanHand2 == 'scissors') {
+  //   return "It's a tie!"
+  // }
   if (cleanHand1 == 'rock' && cleanHand2 == 'paper') {
     return "Hand two wins!"
   }
@@ -51,20 +54,17 @@ const rockPaperScissors = (hand1, hand2) => {
 
 
 
-  // const rockPaperScissors = (cleanHand1, hand2) => {
-  //   return (rock, rock) ? "It's a tie!"
-  //   : (paper, paper) ? "It's a tie!"
-  //   : (scissors, scissors) ? "It's a tie!"
-  //   : (rock, paper) ? "Hand two wins!"
+  // const rockPaperScissors = (cleanHand1, cleanHand2) => {
+  //   return (rock, paper) ? "Hand two wins!"
   //   : (paper, scissors) ? "Hand two wins!"
   //   : (scissors, rock) ? "Hand two wins!"
   //   : (paper, rock) ? "Hand one wins!"
   //   : (scissors, paper) ? "Hand one wins!"
   //   : (rock, scissors) ? "Hand one wins!"
+  //   : (cleanHand1 === cleanHand2) ? "It's a tie!"
   // }
 
-// close out last function without ? 
-  
+
 
   // console.log(rockPaperScissors.trim());
   // console.log(rockPaperScissors.localCompare());
